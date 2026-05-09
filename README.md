@@ -12,7 +12,6 @@ cargo run
 
 ## install test coverage tools
 ```shell
-cargo install cargo-watch --locked
 cargo install cargo-nextest --locked
 cargo +stable install cargo-llvm-cov --locked
 rustup component add llvm-tools-preview
@@ -70,9 +69,13 @@ Enable `Coverage Gutters: Display Coverage` in VS Code
 
 ## run test in watch mode
 ```shell
-# enable Coverage Gutters: Watch in VS Code
+# install bacon to watch
+cargo install --locked bacon
+# Add `coverage` job to bacon.toml
 # run test in watch mode
-cargo watch -w src/ -x 'llvm-cov nextest --lcov --output-path ./target/lcov.info'
+bacon coverage
+
+# enable Coverage Gutters: Watch in VS Code
 ```
 
 Note: Coverage Gutters: Watch does not seem to work on codespaces
