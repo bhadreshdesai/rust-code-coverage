@@ -1,10 +1,7 @@
 {
     "coverage-gutters.watchOnActivate": true,
-    "coverage-gutters.coverageBaseDir": "target",
+    "coverage-gutters.coverageBaseDir": "coverage",
     "coverage-gutters.coverageFileNames": [
         "lcov.info"
-    ],
-    "coverage-gutters.manualCoverageFilePaths": [
-        "/workspaces/rust-code-coverage/target/lcov.info"
     ],
 }

@@ -38,3 +38,5 @@ target
 # already existing elements were commented out
 
 #/target
+
+coverage/

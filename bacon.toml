@@ -11,7 +11,7 @@ default_job = "check"
 env.CARGO_TERM_COLOR = "always"
 
 [jobs.coverage]
-command = ["cargo", "llvm-cov", "nextest", "--lcov", "--output-path", "./target/lcov.info"]
+command = ["cargo", "llvm-cov", "nextest", "--lcov", "--output-path", "./coverage/lcov.info"]
 need_stdout = true
 analyzer = "nextest"
 
